@@ -78,8 +78,9 @@ async def create_deck(name: str) -> None:
 
 @mcp.tool()
 async def create_flashcard(front: str, back: str, tags: list[str], deck_name: str) -> None:
-    """ Erstellt eine neue Flashcard
-
+    """ Erstellt eine neue Flashcard. Das verwendete Programm ist anki, dementsprechen ist formattierung mit HTML erwünscht, wenn es sinnvoll ist.
+        Hightlighte wichtigen Text auf diese Weise z.B. als Bold, stell Stichpunkte als List-Items dar etc.
+    
         Args:
             front: Vorderseite der Flashcard, also z.B. Fragestellung
             back: Rückseite der Flashcard, also Antwort
